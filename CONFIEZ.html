@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Confiez</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<style>
+			body {
+				background-color: #F7F7F7;
+				font-family: 'Libre Baskerville', serif;
+			}
+			.head {
+				position: fixed;
+				width: 100%;
+				background-color: #f5f5f5;
+				height: 149px;
+				padding:0;
+				color: white;
+				z-index: 1;
+			}
+			.logo {
+				margin: 0 auto;
+			}
+			.ff {
+				background-color: rgba(105, 105, 105, 0.63);
+				color: white;
+				padding: 3px 10px;;
+				border: 1px solid;
+				border-radius: 7px;
+				font-size: 22px;
+				text-align: center;
+				font-weight: bolder;
+				position: relative;
+				top: -100px;
+				left: 986px;
+			}
+			.ff:hover {
+				background-color: white;
+				text-decoration: none;
+				box-shadow: 4px 5px 5px grey;
+				color: grey;
+			}
+
+			@media only screen and (max-width: 1038px) {
+				.ff {left:800px;}
+			}
+			@media only screen and (max-width: 855px) {
+				.ff {left:700px;}
+			}
+			@media only screen and (max-width: 778px) {
+				.ff {left:2px;top:-70px}
+			}
+			@media only screen and (max-width: 446px) {
+				.ff {left:2px;top:-58px}
+			}
+			.men {
+				font-size: 14px;
+				min-height: 1vh;
+				background:  -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+			}
+			.men ul li {
+				margin-left: 27px;
+				font-size: 11px;
+			}
+			ul li:hover {
+				background-color: grey;
+			}
+			.men {
+				min-height: 1vh;
+			}
+			@media only screen and (max-width: 990px) {
+				.men {min-height: 9vh;}
+			}
+			.nkr {
+				background: url('1.jpg') no-repeat;
+				background-size: cover;
+				height: 352px;
+				margin-top: 113px;
+				text-align: center;
+				width: 100%;
+
+			}
+			h1 {
+				color: #FFF;
+				padding: 146px 153px 100px;
+				font-size: 49px;
+				font-family: 'Open Sans', sans-serif;
+			}
+			@media only screen and (max-width: 500px) {
+				h1 {font-size: 37px;}
+			}
+			
+			span {
+				font-size: 18px;
+			}
+
+			h3 {
+				font-weight: bolder;
+			}
+
+			.btn1 {
+				padding: 11px 44px;
+				margin-left: 80px;
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				color: white;
+				border-radius: 11px;
+			}
+			.btn1:hover {
+				color: white;
+				border: 1px solid white;
+				box-shadow: 0 0 20px #484848;
+			}
+			b {
+				font-size: 16px;
+			}
+			.list {
+				list-style-type: none;
+			}
+			.list li {
+				display: inline-block;
+				color: white;
+				font-size: 10px;
+				margin-left: 13px;
+			}
+			.list li a {
+				color: white;
+			}
+			.foot {
+				background-color: #E5E5E5;
+				min-height: 26vh;
+			}
+			.lr {
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				padding-top: 12px;
+				min-height: 4vh;
+			}
+			.list li:hover {
+				background-color: transparent;
+			}
+			.btn2 {
+				padding: 6px 25px;
+				margin-left: 80px;
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				color: white;
+				border-radius: 11px;
+			}
+			.btn2:hover {
+				color: white;
+				box-shadow: 0 0 20px #484848;
+			}
+			.btn2:hover span {
+				transform: rotate(-40deg);
+			}
+			@media only screen and (max-width: 370px) {
+				.btn2 {margin-left: 20px;}
+			}
+			.krug {
+				border:1px solid white;
+				min-height: 55vh;
+				padding-left: 111px;
+				padding-top: 10px;
+				padding-right: 100px;
+				background-color: white;
+				box-shadow: 0 0 22px #A3A3A3;
+			}
+			.krug1 {
+				width: 50px;
+				height:50px;
+				border: 1px solid;
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				border-radius: 25px;
+				text-align: center;
+				color: white;
+				padding-top: 7px;
+			}
+			.krug2 {
+				width: 50px;
+				height:50px;
+				border: 1px solid;
+				border-radius: 25px;
+				text-align: center;
+				color: white;
+				padding-top: 7px;
+				background-color: #A3A3A3;
+			}
+			.gic {
+				width: 250px;
+				height: 12px;
+				margin-top: 19px;
+				background-color: #A3A3A3;
+			}
+			@media only screen and (max-width: 1207px) {
+				.gic {display:none;}
+				.krug1 {margin-left:0;}
+				.krug2 {margin-left:17px;}
+				.krug1 span {display: none;}
+				.krug2 span {display: none;}
+
+			}
+			@media only screen and (max-width: 510px) {
+				.krug {padding-left: 40px;}
+
+			}
+			.btto {
+				width: 294px;
+				height: 53px;
+				border-top-right-radius: 37px;
+				border-bottom-right-radius: 37px;
+				outline: none;
+			}
+			.add {
+				border-top-left-radius: 37px;
+				border-bottom-left-radius: 37px;
+				background-color: #A3A3A3;
+				width: 108px;
+				color: white;
+				font-size: 12px;
+			}
+			.inn {
+				width: 62px;
+				height: 51px;
+				outline: none;
+			}
+			.boo {
+				width:232px
+			}
+			.lb {
+				margin-left: 178px;
+			}
+			.db {
+				float: left;
+			}
+			.bb1 {
+				width: 62px;
+				height: 53px;
+			}
+			.boo1 {
+				width: 232px;
+			}
+			@media only screen and (max-width: 775px) {
+				.add {width: 80px;}
+				.btto {width: 200px;}
+				.boo {width: 123px;}
+				.boo1 {width: 127px;}
+				.lb {margin-left: 0;}
+			}
+			@media only screen and (max-width: 540px) {
+				.krug {padding-left: 25px;}
+				.cont {margin-left: 8px;}
+			}
+			@media only screen and (max-width: 424px) {
+				.krug {padding-left: 25px;}
+				.bb1 {width: 42px;}
+				.inn {width: 42px;}
+				.btto {width:188px;}
+				.boo {width: 123px;}
+				.boo1 {width: 127px;}
+				.krug {padding-left: 12px;}
+				.krug1 {margin-left: 17px;}
+				.badd {width: 163px;}
+			}
+			@media only screen and (max-width: 332px) {
+				.men {margin-top: 20px;}
+			}
+			.imp a {
+				color: white !important;
+			}
+			.number a {
+				color: black !important;
+			}
+
+
+		</style>
+          </head>
+
+          <body>
+
+
+
+
+		  <div class="container-fluid head ">
+			  <img class="img-responsive logo" src="Logo.png"/>
+			  <a href="#" class="ff">f</a>
+			  <nav class="navbar navbar-expand-md navbar-static-top navbar-dark bg-dark men">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav imp">
+						  <li class="nav-item active " style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="ACCUEIL.html">ACCUEIL <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="L'AGENCE.html">L'AGENCE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="VENTE.html">VENTE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="LOCATION.html">LOCATION</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="PROGRAMME.html">PROGRAMME NEUF</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="GESTION.html">GESTION LOCATIVE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;background-color:grey;">
+							  <a class="nav-link" href="CONFIEZ.html">CONFIEZ-NOUS VOTRE-BIEN </a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="CONTACTER.html">CONTACTER L'AGENCE</a>
+						  </li>
+						  <li class="nav-item number" style="background-color: #DADADA;margin-top: -5px;margin-bottom: -6px;">
+							  <a class="nav-link" href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;04 42 99 30 00</a>
+						  </li>
+
+					  </ul>
+				  </div>
+			  </nav>
+		  </div><br><br>
+			<div class="conteiner-fluid nkr">
+				<div class="d-flex justify-content-center">
+					<h1 class="text-center">CONFIEZ-NOUS VOTRE BIEN IMMOBILIER </h1>
+				</div>
+			</div><br><br><br>
+
+			<div class="container cont">
+				<div class="row r5">
+					<span style="font-size:15px;"><strong>Notre agence immobilière IMMOBILIERE ST JEROME (Provence-Alpes-Côte d'Azur) propose déjà des biens
+						immobiliers dans les villes de Aix En Provence, Saint Cannat, Mimet, Eguilles, Saint Marc Jaumegarde, Le Tholonet,
+						Septemes Les Vallons, Rognes, Pertuis, Marseille, Marseille 8eme et dans bien d'autres villes, si vous souhaitez
+						nous confier votre bien pour le vendre ou le louer, remplissez ce formulaire et nous vous contacterons pour une
+						estimation gratuite et éventuellement sa prise en charge.</strong></span>
+				</div>
+				<div class="row r6">
+					<span style="color:#882C2F;font-size:15px;"><strong>Les informations obligatoires sont indiquées avec un astérisque (*).</strong></span>
+				</div>
+			</div>
+			<br><br><br>
+
+			<div class="container krug">
+				<div class="row">
+					<div class=" krug1"><i class="fa fa-user fa-2x" aria-hidden="true"></i></i><br><br>
+						<span style="color:black;font-size: 14px;text-align: center;">Informations personnelles</span>
+					</div>
+					<div class=" gic"></div>
+					<div class=" krug2"><i class="fa fa-info fa-2x" aria-hidden="true"></i><br><br>
+						<span style="color:black;font-size: 14px;text-align: center;">Informations générales</span>
+					</div>
+					<div class=" gic"></div>
+					<div class=" krug2"><i class="fa fa-home fa-2x" aria-hidden="true"></i></i><br><br>
+						<span style="color:black;font-size: 14px;text-align: center;">Informations détails</span>
+					</div>
+					<div class=" gic"></div>
+					<div class=" krug2"><i class="fa fa-commenting fa-2x" aria-hidden="true"></i><br><br><span style="color:grey;font-size: 14px;">Vos
+						commentaires</span>
+					</div>
+				</div><br><br><br><br>
+				<div style="display: flex;justify-content: space-between;flex-wrap: wrap">
+					<div>
+						<form class="form-group frmgroup">
+							<div class="input-group margin-bottom-sm ">
+								<span class="input-group-addon add">Nom*:</i></span>
+								<div class="dropdown db">
+									<button class="btn btn-default dropdown-toggle bb1" data-toggle="dropdown">M</button>
+									<ul class="dropdown-menu dm">
+										<li>Charge</li>
+										<li>Main</li>
+										<li>Manu</li>
+									</ul>
+								</div>
+								<input class="btto boo1"  type="text">
+							</div><br>
+							<div class="input-group margin-bottom-sm ">
+								<span class="input-group-addon add">Code Postal<br>/Ville*:</i></span>
+								<input type="text" class="inn"/>
+								<input class="btto boo" type="text">
+							</div><br>
+							<div class="input-group margin-bottom-sm ">
+								<span class="input-group-addon add">E-mail*:</i></span>
+								<input class="btto"  type="text">
+							</div>
+						</form>
+					</div>
+					<div>
+						<form class="form-group frmgroup">
+							<div class="input-group margin-bottom-sm ">
+								<span class="input-group-addon add">Prenom:</i></span>
+								<input class="btto"  type="text">
+							</div><br>
+							<div class="input-group margin-bottom-sm ">
+								<span class="input-group-addon add add1">Telephone*:</i></span>
+								<input class="btto badd"  type="text">
+							</div>
+						</form><br><br><br><br><br>
+						<button class="btn btn-defult btn1 lb"><b>Etape Suivante</b>&nbsp;&nbsp;<i class="fa fa-caret-right fa-lg" aria-hidden="true"></i></button>
+					</div>
+				</div>
+			</div><br><br>
+
+			<button class="btn btn-defult btn1"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;&nbsp;&nbsp;<b>Retour</b></button><br><br>
+
+			<div class="container-fluid foot">
+				<div class="row lr">
+					<ul class="list">
+						<li><a href="#">ACCUEIL</a></li>
+						<li>|</li>
+						<li><a href="#">L'AGENCE </a></li>
+						<li>|</li>
+						<li><a href="#">VENTE</a></li>
+						<li>|</li>
+						<li><a href="#">LOCATION</a></li>
+						<li>|</li>
+						<li><a href="#">PROGRAMME NEUF</a></li>
+						<li>|</li>
+						<li><a href="#">GESTION LOCATIVE </a></li>
+						<li>|</li>
+						<li><a href="#">CONFIEZ-NOUS VOTRE BIEN</a></li>
+						<li>|</li>
+						<li><a href="#">CONTACTER L’AGENCE</a></li>
+						<li>|</li>
+						<li><a href="#">NOS HONORAIRES </a></li>
+					</ul>
+				</div>
+				<div class="container" style="border-bottom: 1px solid grey;padding:30px 0;">
+					<div class="col-md-8">
+						<div class="row" style="font-size: 19px;"><strong>Immobilier Aix En Provence - Immobiliere st jerome</strong></div>
+						<div class="row">1 et 3 Avenue Saint Jérôme - 13100 Aix En Provence Tél : 04.42.99.30.00 - Fax : 04.42.24.16.87</div>
+					</div><br>
+					<div class="col-md-4">
+						<button class="btn btn-defult btn2"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;<b>Contacter l'agence</b></button>
+					</div>
+				</div><br>
+				<div class="container" >
+					<div class="col-md-8"><br>
+						<div class="row">Site immobilier partenaire et réalisé par DMaisons Provence © Copyright 2013-2017</div>
+					</div>
+					<div class="col-md-4">
+						<img src="nkr.jpg"/>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+          </body>
+
+      </html>
