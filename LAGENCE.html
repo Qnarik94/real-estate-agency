@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>L'agence</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<style>
+			body {
+				background-color: #F7F7F7;
+				font-family: 'Libre Baskerville', serif;
+			}
+			.head {
+				position: fixed;
+				width: 100%;
+				background-color: #f5f5f5;
+				height: 149px;
+				padding:0;
+				color: white;
+				z-index: 1;
+			}
+			.logo {
+				margin: 0 auto;
+			}
+			.ff {
+				background-color: rgba(105, 105, 105, 0.63);
+				color: white;
+				padding: 3px 10px;;
+				border: 1px solid;
+				border-radius: 7px;
+				font-size: 22px;
+				text-align: center;
+				font-weight: bolder;
+				position: relative;
+				top: -100px;
+				left: 986px;
+			}
+			.ff:hover {
+				background-color: white;
+				text-decoration: none;
+				box-shadow: 4px 5px 5px grey;
+				color: grey;
+			}
+			@media only screen and (max-width: 1038px) {
+				.ff {left:800px;}
+			}
+			@media only screen and (max-width: 855px) {
+				.ff {left:700px;}
+			}
+			@media only screen and (max-width: 778px) {
+				.ff {left:2px;top:-70px}
+			}
+			@media only screen and (max-width: 446px) {
+				.ff {left:2px;top:-58px}
+			}
+			.men {
+				font-size: 14px;
+				min-height: 1vh;
+				background:  -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);;
+			}
+			.men ul li {
+				margin-left: 27px;
+				font-size: 11px;
+			}
+			ul li:hover {
+				background-color: grey;
+			}
+			.men {
+				min-height: 1vh;
+			}
+			@media only screen and (max-width: 990px) {
+				.men {min-height: 9vh;}
+			}
+			.nkr {
+				background: url('images/1.jpg') no-repeat;
+				background-size: cover;
+				height: 352px;
+				margin-top: 113px;
+			}
+			@media only screen and (max-width: 332px) {
+				.men {margin-top: 20px;}
+			}
+			h1 {
+				color: #FFF;
+				padding-top: 130px;
+				font-size: 49px;
+				font-family: 'Open Sans', sans-serif;
+			}
+			@media only screen and (max-width: 1067px){
+				h1 {font-size: 37px;}
+			}
+			@media only screen and (max-width: 818px){
+				h1 {font-size: 34px;margin-left:12px;}
+			}
+			
+			.con {
+				color: white;
+
+			}
+			.con1 {
+				text-align: center;
+				background:  -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				padding:10px;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+			}
+			span {
+				font-size: 18px;
+			}
+			.con2 {
+				text-align: center;
+				background:  -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				padding:10px;
+				border: 1px solid transparent;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+			}
+			.con2 span {
+				font-size: 9px;
+			}
+			.step1 {
+				width: 451px;
+				min-height: 34vh;
+				background-color: white;
+				border-top-left-radius: 13px;
+				border-top-right-radius: 13px;
+				box-shadow: 0 0 14px grey;
+				margin: 10px 33px 0;
+				padding: 40px;
+
+			}
+			.stp {
+				width: 451px;
+				background:  -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				color: white;
+				margin:0;
+				border-bottom-left-radius: 13px;
+				border-bottom-right-radius: 13px;
+				padding:10px 0 10px;
+				margin-left: 33px;
+			}
+			@media only screen and (max-width: 673px) {
+				.step1 {width: 377px;}
+				.stp {width: 377px;}
+			}
+			@media only screen and (max-width: 673px) {
+				.step1 {width: 250px;}
+				.stp {width: 250px;}
+			}
+			@media only screen and (max-width: 342px) {
+				.step1 {margin-left: -11px;}
+				.stp {margin-left: -11px;}
+			}
+			.btn1 {
+				padding: 11px 44px;
+				margin-left: 80px;
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				color: white;
+				border-radius: 11px;
+			}
+			.btn1:hover {
+				color: white;
+				border: 1px solid white;
+				box-shadow: 0 0 20px #484848;
+			}
+			b {
+				font-size: 16px;
+			}
+			.list {
+				list-style-type: none;
+				font-size: 11px;
+			}
+			.list li {
+				display: inline-block;
+				color: white;
+				font-size: 10px;
+				margin-left: 13px;
+			}
+			.list li a {
+				color: white;
+			}
+			.foot {
+				background-color: #E5E5E5;
+				min-height: 26vh;
+			}
+			.lr {
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				padding-top: 12px;
+				min-height: 4vh;
+			}
+			.list li:hover {
+				background-color: transparent;
+			}
+			.btn2 {
+				padding: 6px 25px;
+				margin-left: 80px;
+				background:   -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(62,62,62) 100%);
+				color: white;
+				border-radius: 11px;
+			}
+			.btn2:hover {
+				color: white;
+				box-shadow: 0 0 20px #484848;
+			}
+			.btn2:hover span {
+				transform: rotate(-40deg);
+			}
+			@media only screen and (max-width: 370px) {
+				.btn2 {margin-left: 20px;}
+			}
+			.imp a {
+				color: white !important;
+			}
+			.number a {
+				color: black !important;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		  <div class="container-fluid head ">
+			  <img class="img-responsive logo" src="images/Logo.png"/>
+			  <a href="#" class="ff">f</a>
+			  <nav class="navbar navbar-expand-md navbar-static-top navbar-dark bg-dark men">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav imp">
+						  <li class="nav-item active " style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="index.html">ACCUEIL <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px;background-color:grey; margin-bottom: -6px;">
+							  <a class="nav-link" href="L'AGENCE.html">L'AGENCE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="VENTE.html">VENTE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="LOCATION.html">LOCATION</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="PROGRAMME.html">PROGRAMME NEUF</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="GESTION.html">GESTION LOCATIVE</a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="CONFIEZ.html">CONFIEZ-NOUS VOTRE-BIEN </a>
+						  </li>
+						  <li class="nav-item" style="margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="CONTACTER.html">CONTACTER L'AGENCE</a>
+						  </li>
+						  <li class="nav-item number" style="background-color: #DADADA;margin-top: -5px; margin-bottom: -6px;">
+							  <a class="nav-link" href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp;04 42 99 30 00</a>
+						  </li>
+
+					  </ul>
+				  </div>
+			  </nav>
+		  </div><br><br>
+			<div class="conteiner-fluid nkr">
+				<div class="d-flex justify-content-center">
+					<h1 class="text-center"> INFORMATIONS SUR IMMOBILIERE ST JEROME </h1>
+				</div>
+			</div><br><br><br><br>
+			<div class="container con">
+				<div class="row con1">
+					<span class="col-md-12">IMMOBILIERE SAINT-JEROME</span>
+				</div>
+				<div class="row con2">
+
+					<span style="margin-left:68px;"><a href="https://www.google.fr/maps/place/1+Avenue+Saint-J%C3%A9r%C3%B4me,+13100+Aix-en-Provence/@43.5230511,5.4499977,18z/data=!4m5!3m4!1s0x12c98d96c654327d:0x379c3af8a860b649!8m2!3d43.523021!4d5.4500808" style="color:white;">
+						<span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;Agence immobilie,Aix en proverce,Avenue ST JErome,<br>13100 Avenue en proverce,France </a></span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;De 9H a 12H et de 14H 19H</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Du lundi au vendredi Le samedi sur rvl</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;04 42 99 30 00</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;04 42 99 16 87</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;@&nbsp;&nbsp;contact$mobile-stjerome.com</span>
+				</div>
+			</div><br><br><br>
+			<div class="container-fluid">
+					<h3 class="text-center">L'AGENCE IMMOBILIE ST JEROME, A-AIX-EN-PROVENCE,<br> UNE AGENCE A VOTRE SERVICE</h3>
+				<div class="container">
+					<div class="row">L'agence immobilie st Jerome,implantee, au coeur d'Aix-en-Province, met a votre dispositon sor professionnlisme et sa connaissance du marche pour vous aider dans vons
+					demarches.</div>
+					<div class="row">Nous vous apportons un vertable savoir faire pour la vente, l'achat ou la location d'un bien a ix-en-Provence et ses alentours.</div>
+					<div class="row">N;hesitez pas a nous contacter pour des renseingnements sur la vente l'achat la location ou la gestion d'un bien;</div>
+				</div>
+			</div><br><br><br>
+			<div class="container-fluid">
+				<h3 class="text-center">NOT SERVICES</h3>
+				<div class="container">
+					<div class="row">Spécialistes des transactions immobilières, notre équipe de professionnels vous conseille et vous accompagne étape par étape : de la signature du compromis à la remise des clés.</div>
+				</div>
+			</div><br><br>
+
+			<div class="container-fluid">
+				<div class="container">
+					<div style="display: flex;flex-wrap: wrap">
+						<div>
+							<div class=" step1">
+								<h4 class="text-center" >VOUS SOUHAITEZ VENDRE VOTRE BIEN.
+									CONFIEZ-LE À DES PROFESSIONNELS</h4>
+								<div class="row">Pour la mise en vente d'un bien, notre équipe vous accompagne étape par étape :</div><br>
+								<div class="row">- Estimation gratuite du bien à la vente</div>
+								<div class="row">- Recherche de clients potentiels</div>
+								<div class="row">- Organisation de visites</div>
+								<div class="row">- Prise en charge de la signature du compromis et de l'acte authentique chez le notaire</div>
+							</div>
+							<div>
+								<div class="  stp">
+									<h5 class="text-center">Contacnez-nous pour nous confier votre bien a la vente </h5>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="step1" style="padding: 40px 40px 140px 40px">
+								<h4 class="text-center">VOUS SOUHAITEZ ACHETER UN BIEN
+									SUR AIX-EN-PROVENCE ET SES ALENTOURS</h4>
+								<div class="row">Nous sélectionnons pour vous des biens correspondant à vos attentes et vous accompagnons jusqu'à la signature de l'acte.</div>
+							</div>
+							<div class="  stp">
+								<h5 class="text-center">Contacnez-nous pour nous confier votre bien a la vente </h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><br><r>
+
+			<div class="container-fluid">
+				<div class="container">
+					<div style="display: flex;flex-wrap: wrap">
+						<div>
+							<div class=" step1">
+								<h4 class="text-center" >VOUS SOUHAITEZ METTRE
+									VOTRE BIEN À LA LOCATION</h4>
+								<div class="row">Vous avez un ou plusieurs biens en investissement locatif ?</div><br>
+							<div class="row">Vous n'avez pas le temps de vous en occuper ou appréhender les problèmes à gérer avec vos locataires ?</div>
+							<div class="row">L'agence Immobilière Saint-Jérôme met son expérience à votre service pour vous faciliter la gestion locative.</div>
+							<div class="row">Nos conseillers vous accompagnent dans chacune de vos démarches afin de vous apporter simplicité et sécurité</div>
+						</div>
+						<div>
+							<div class="stp">
+								<h5 class="text-center">En savoir plus sur la gestion locative agence Immobilière Saint-Jérôme à Aix-en-Provence</h5>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="step1" >
+							<h4 class="text-center">VOUS SOUHAITEZ LOUER UN BIEN
+								SUR AIX-EN-PROVENCE ET SES ALENTOURS</h4>
+							<div class="row">Nous cherchons pour vous les biens à la location correspondants à vos besoins (surface, localisation, prix….)</div><br>
+							<div class="row">Notre équipe se met à votre disposition durant les visites, les états des lieux d’entrée et de sortie ainsi que pour la signature du bail.</div>
+							<div class="row">- location villa Aix-en-Provence</div>
+							<div class="row">- location appartement Aix-en-Provence</div>
+						</div>
+						<div class="  stp">
+							<h5 class="text-center">Consultez nos annonces immobilières location sur Aix-en-Provence et ses alentours</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div><br><br><br><br>
+
+				<div class="container-fluid">
+				<h3 class="text-center">NOTRE SAVOIR FAIRE</h3>
+				<div class="container">
+					<div class="row">Faire appel à l’agence immobilière Saint-Jérôme à Aix-en Provence c’est l’assurance de bénéficier de l’expérience de professionnels :</div><br>
+					<div class="row">- Connaissance du marché immobilier sur Aix-en-Provence et ses alentours et de son secteur géographique (estimation fiable du prix des biens à la vente et à la location)</div>
+					<div class="row">- Connaissance du droit immobilier</div>
+					<div class="row">- Conseils juridiques adaptés</div>
+					<div class="row">- Conseils en rénovation – Mise en relation avec les entreprises spécialisées</div>
+				</div>
+			</div><br><br><br><br>
+
+			<div class="container-fluid">
+				<h3 class="text-center">NOTRE PHILOSOPHIE</h3>
+				<div class="container">
+					<div class="row">L’agence Immobilière Saint-Jérôme met un point d’honneur à répondre à l’attente de ses clients.</div><br>
+					<div class="row">- Etre à l’écoute du client et répondre à ses attentes du mieux possible</div>
+					<div class="row">- Etre disponible</div>
+					<div class="row">- Mais aussi Respecter les obligations juridiques de la loi HOGUET N°70-9 DU 2 JANVIER 1970 qui règlemente la profession d'agent immobilier</div>
+				</div>
+			</div><br><br><br><br>
+
+				<div class="container-fluid">
+					<h3 class="text-center">PARTENAIRE</h3>
+					<div class="container">
+						<div class="row">L’agence Immobilière Saint-Jérôme est partenaire du Groupe Néome pour la promotion immobilière de programmes neufs.</div><br>
+						<div class="row"><a href="#" style="color:black;">> Pour en savoir plus consulter nos annonces de programmes</a></div><br>
+						<div class="row">> Groupe Neome : <strong><a href="http://www.groupe-neome.fr/" style="color:black;">http://www.groupe-neome.fr</a> </strong></div>
+					</div>
+				</div><br><br><br><br>
+				<div class="container-fluid">
+					<h3 class="text-center">DIRECTION</h3>
+					<div class="container">
+						<h5 class="text-center">David ZAZOUN</h5><br>
+					</div>
+				</div><br><br><br><br>
+
+				<button class="btn btn-defult btn1"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;&nbsp;&nbsp;<b>Retour</b></button><br><br>
+
+				<div class="container-fluid foot">
+					<div class="row lr">
+						<ul class="list">
+							<li><a href="#">ACCUEIL</a></li>
+							<li>|</li>
+							<li><a href="#">L'AGENCE </a></li>
+							<li>|</li>
+							<li><a href="#">VENTE</a></li>
+							<li>|</li>
+							<li><a href="#">LOCATION</a></li>
+							<li>|</li>
+							<li><a href="#">PROGRAMME NEUF</a></li>
+							<li>|</li>
+							<li><a href="#">GESTION LOCATIVE </a></li>
+							<li>|</li>
+							<li><a href="#">CONFIEZ-NOUS VOTRE BIEN</a></li>
+							<li>|</li>
+							<li><a href="#">CONTACTER L’AGENCE</a></li>
+							<li>|</li>
+							<li><a href="#">NOS HONORAIRES </a></li>
+						</ul>
+					</div>
+					<div class="container" style="border-bottom: 1px solid grey;padding:30px 0;">
+						<div class="col-md-8">
+							<div class="row" style="font-size: 19px;"><strong>Immobilier Aix En Provence - Immobiliere st jerome</strong></div>
+							<div class="row">1 et 3 Avenue Saint Jérôme - 13100 Aix En Provence Tél : 04.42.99.30.00 - Fax : 04.42.24.16.87</div>
+						</div><br>
+						<div class="col-md-4">
+							<button class="btn btn-defult btn2"><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;&nbsp;<b>Contacter l'agence</b></button>
+						</div>
+					</div><br>
+					<div class="container" >
+						<div class="col-md-8"><br>
+							<div class="row">Site immobilier partenaire et réalisé par DMaisons Provence © Copyright 2013-2017</div>
+						</div>
+						<div class="col-md-4">
+							<img src="images/nkr.jpg"/>
+						</div>
+
+					</div>
+				</div>
+
+          </body>
+
+      </html>
